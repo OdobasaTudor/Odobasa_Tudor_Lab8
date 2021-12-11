@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Odobas_Tudor_Lab8.Data;
 
 namespace Odobas_Tudor_Lab8.Migrations
 {
     [DbContext(typeof(Odobas_Tudor_Lab8Context))]
-    partial class Odobas_Tudor_Lab8ContextModelSnapshot : ModelSnapshot
+    [Migration("20211208100540_Publisher")]
+    partial class Publisher
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

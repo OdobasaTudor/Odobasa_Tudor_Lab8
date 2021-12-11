@@ -17,5 +17,6 @@ namespace Odobas_Tudor_Lab8.Data
         public DbSet<Odobas_Tudor_Lab8.Models.Book> Book { get; set; }
 
         public DbSet<Odobas_Tudor_Lab8.Models.Publisher> Publisher { get; set; }
+        public object Category { get; internal set; }
     }
 }
